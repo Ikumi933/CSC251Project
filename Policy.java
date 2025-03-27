@@ -68,8 +68,8 @@ public class Policy
    System.out.println("Policy's Last Name: " + lastName);
    System.out.println("Policy's Age: " + age);
    System.out.println("Policyholder's smoking Status: " + smoking);
-   System.out.println("Policyholder's Height: " + height + "inches");
-   System.out.println("Policyholder's Weight: " + weight + "pounds");
+   System.out.println("Policyholder's Height: " + height + " inches");
+   System.out.println("Policyholder's Weight: " + weight + " pounds");
    System.out.println("Policyholder's BMI: " + BMI() );
    System.out.println("Policy Price: $" + InsurancePolicy());
 
