@@ -14,6 +14,8 @@ public class Project_Ikumi_Uemura
    double height;
    double weight;
    
+
+   //ask for
    System.out.print("Please enter the Policy Number: ");
    number = keyboard.nextInt();
    keyboard.nextLine();
