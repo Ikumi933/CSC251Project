@@ -201,6 +201,7 @@ public class Policy
    }
    return total;
    }
+   //display the information that I gathered from user input
    public void displayInfo()
    {
    System.out.println("Policy Number: " + number);
