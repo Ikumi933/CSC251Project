@@ -1,7 +1,7 @@
 public class Policy
 {
    //fields
-   private int number;
+   private String number;
    private String name;
    private String firstName;
    private String lastName; 
@@ -13,7 +13,7 @@ public class Policy
    //constructors
    public Policy()
    {
-   number = 0;
+   number = "";
    name = "";
    firstName = "";
    lastName = "";
@@ -42,7 +42,7 @@ public class Policy
     */
    public void setPolicyNumber(String pNumber)
    {
-      policyNumber = pNumber;
+      number = pNumber;
    }
    /**
     * 
@@ -50,7 +50,7 @@ public class Policy
     */
    public void setProviderName(String pName)
    {
-      providerName = pName;
+      name = pName;
    }
    /**
     * 
@@ -82,7 +82,7 @@ public class Policy
     */
    public void setSmokingStatus(String sStatus)
    {
-      smokingStatus = sStatus;
+      smoking = sStatus;
    }
    /**
     * 
@@ -109,7 +109,7 @@ public class Policy
     */
    public String getPolicyNumber()
    {
-      return policyNumber;
+      return number;
    }
     /**
     * 
@@ -117,7 +117,7 @@ public class Policy
     */
    public String getProviderName()
    {
-      return providerName;
+      return name;
    }
     /**
     * 
@@ -149,7 +149,7 @@ public class Policy
     */
    public String getSmokingStatus()
    {
-      return smokingStatus;
+      return smoking;
    }
     /**
     * 
