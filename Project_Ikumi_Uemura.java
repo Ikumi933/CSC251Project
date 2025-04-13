@@ -58,15 +58,13 @@ public class Project_Ikumi_Uemura
       }
       Policy p = new Policy(number, name, firstName, lastName, age, smoking, height, weight);
 
-      policyArrayList.add(p);
-
-      inputFile.close();
-
-      
+      policyArrayList.add(p);   
 /* Create Policy objects using the Policy class type - we are still under the while loop. Objects will be created 
 as long as there are records in the file to read.*/
       
    }//close loop
+
+   inputFile.close();
    // //ask for
    for(int i = 0; i < policyArrayList.size(); i++)
    {
