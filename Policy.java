@@ -22,7 +22,7 @@ public class Policy
    height = 0.0;
    weight = 0.0;
    }
-   public Policy(int n, String nam, String fn, String ln, int agee, 
+   public Policy(String n, String nam, String fn, String ln, int agee, 
    String smoke, double h, double w )
    {
    number = n;
