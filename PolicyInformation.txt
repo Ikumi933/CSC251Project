@@ -1,3 +1,32 @@
+3450
+State Farm
+Alice
+Jones
+20
+smoker
+65
+110
+
+3455
+Aetna
+Bob
+Lee
+54
+non-smoker
+72
+200
+
+2450
+Met Life
+Chester
+Williams
+40
+smoker
+71
+300
+
+3670
+Global
 Cindy
 Smith
 55
@@ -22,3 +51,4 @@ Duncan
 smoker
 66
 215
+
