@@ -58,6 +58,8 @@ public class Project_Ikumi_Uemura
          inputFile.nextLine();
       }
       Policy p = new Policy(number, name, firstName, lastName, age, smoking, height, weight);
+      
+      PolicyHolder holder = new PolicyHolder()
 
       policyArrayList.add(p);   
 /* Create Policy objects using the Policy class type - we are still under the while loop. Objects will be created 
@@ -84,7 +86,11 @@ as long as there are records in the file to read.*/
       if(policyArrayList.get(i).getSmokingStatus().equalsIgnoreCase("smoker"))//keep track of the number of smokers
             numSmokers++;
    }
-
+      for(int: i=0; i < p.size(); i++)
+      {
+      System.out.print(holder.get(i));
+      System.out.print();
+      }
       System.out.println("The number of policies with a smoker is: " + numSmokers);
       System.out.println("The number of policies with a non-smoker is: " + (policyArrayList.size() - numSmokers) );
       }
