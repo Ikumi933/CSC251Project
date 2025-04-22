@@ -22,6 +22,7 @@ public class Project_Ikumi_Uemura
    String smoking = "";
    double height = 0.0;
    double weight = 0.0;
+   int numSmokers = 0;
    
 //Create an array list to store objects. The ArrayList will hold Policy objects.
          ArrayList<Policy> policyArrayList = new ArrayList<Policy>();
@@ -80,8 +81,12 @@ as long as there are records in the file to read.*/
       System.out.printf("Policyholder's BMI: %.2f\n", policyArrayList.get(i).BMI() );
       System.out.printf("Policy Price: $%.2f\n", policyArrayList.get(i).InsurancePolicy());
   
+      if(policyArrayList.get(i).getSmokingStatus().equalsIgnoreCase("smoker"))//keep track of the number of smokers
+            numSmokers++;
    }
-   
+
+      System.out.println("The number of policies with a smoker is: " + numSmokers);
+      System.out.println("The number of policies with a non-smoker is: " + (policyArrayList.size() - numSmokers) );
       }
       catch(IOException ex)//If something goes wrong, an IOException is "thrown" to us, and we "catch" it and deal with it
       {
