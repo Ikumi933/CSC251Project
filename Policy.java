@@ -14,19 +14,8 @@ public class Policy
 
    
    //constructors
-   public Policy()
-   {
-   number = "";
-   name = "";
-   firstName = "";
-   lastName = "";
-   age = 0;
-   smoking = "";
-   height = 0.0;
-   weight = 0.0;
-   }
-   public Policy(String n, String nam, String fn, String ln, int agee, 
-   String smoke, double h, double w )
+   public Policy(String n, String nam, String fn, String ln, 
+   String smoke, double h, double w, PolicyHolder hold)
    {
    number = n;
    name = nam;
