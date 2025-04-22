@@ -5,10 +5,13 @@ public class Policy
    private String name;
    private String firstName;
    private String lastName; 
-   private int age;
    private String smoking;
    private double height;
    private double weight;
+   private int age;
+   
+   PolicyHolder holder = new PolicyHolder();
+
    
    //constructors
    public Policy()
@@ -29,10 +32,10 @@ public class Policy
    name = nam;
    firstName = fn;
    lastName = ln;
-   age = agee;
    smoking = smoke;
    height = h;
-   weight = w;   
+   weight = w;  
+   holder = new PolicyHolder(hold) 
    }
    //setters
 
@@ -68,7 +71,8 @@ public class Policy
    {
       lastName = lName;
    }
-   /**
+   
+    /**
     * 
     * @param a - Integer value set the age 
     */
@@ -76,7 +80,8 @@ public class Policy
    {
       age = a;
    }
-   /**
+
+      /**
     * 
     * @param sStatus - String value set smoking status
     */
@@ -135,7 +140,8 @@ public class Policy
    {
       return lastName;
    }
-    /**
+   
+       /**
     * 
     * @return integer value of age
     */
@@ -143,6 +149,8 @@ public class Policy
    {
       return age;
    }
+
+
     /**
     * 
     * @return String value of smoking status 
@@ -176,46 +184,22 @@ public class Policy
       final double CONVFACTOR = 703;
    return (weight * CONVFACTOR) / (height * height);
    }
-    /**
-    * 
-    * @return double value of total of insurance fee 
-    */
-   public double InsurancePolicy()
-   {
-   double total = 600;
-   
-   if (age > 50)
-   {
-   total += 75;
-   //fee is $75 whoever above 50 years old
-   }
-   if(smoking.equalsIgnoreCase("smoker"))
-   {
-   total += 100;
-   //additional $100 if they are smoker
-   }
-   if (BMI() > 35)
-   {
-   total += (BMI()-35) * 20;
-   //calculation for BMI fee in case when they exceed 35
-   }
-   return total;
-   }
-   public void displayInfo()
-   {
-   System.out.println("Policy Number: " + number);
-   System.out.println("Provider Name: " + name);
-   System.out.println("Policy's First Name: " + firstName );
-   System.out.println("Policy's Last Name: " + lastName);
-   System.out.println("Policy's Age: " + age);
-   System.out.println("Policyholder's smoking Status: " + smoking);
-   System.out.println("Policyholder's Height: " + height + " inches");
-   System.out.println("Policyholder's Weight: " + weight + " pounds");
-   System.out.printf("Policyholder's BMI: %.2f\n", BMI() );
-   System.out.printf("Policy Price: $%.2f\n", InsurancePolicy());
 
-   
 
-   }
+  public String toString()
+  {
    
+   return String.format("Policy Number: " + number +
+      "\nProvider Name: " + name +
+   "Policy's First Name: " + firstName +
+      "\nPolicy's Last Name: " + lastName +
+      "\nPolicy's Age: " + age +
+      "\nPolicyholder's smoking Status: " + smoking +
+      "\nPolicyholder's Height: " + height + " inches"+
+      "\nPolicyholder's Weight: " + weight + " pounds"+
+      "\nPolicyholder's BMI: %.2f\n", BMI()
+      "\nPolicy Price: $%.2f\n", holder.toString());
+
+  
+  }
 }
